@@ -1,65 +1,38 @@
+<!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro </title>
+    <title>Formula de Baskhara</title>
     <link rel="stylesheet" href="style.css">
     <script src="form.js"></script>
 </head>
+
 <body>
-    <h1>Formulário ♡</h1>
-    <hr>
-    <form id="linhaForm">
-        <br>
-        <label for="produto">Selecione um produto:</label>
-        <br>
-        <select name="produto" id="produto" required>
-            <option value="corretivo">corretivo</option>
-            <option value="blush">blush</option>
-            <option value="microondas">microondas</option>
-            <option value="liquidificador">liquidificador</option>
-        </select>
+    <h1>Baskhara</h1>
+    <form id="FormBaskha">
+        <input type="number" name="a" id="a" placeholder="Digite o valor de a" required>
         <br><br>
-        <label for="produto">Selecione uma marca:</label>
-        <br>
-        <select name="marca" id="marca" required>
-            <option value="Sheglam">Sheglam</option>
-            <option value="Mari Maria">Mari Maria</option>
-            <option value="Eletrolux">Eletrolux</option>
-            <option value="Philco">Philco</option>
-        </select>
+        <input type="number" name="b" id="b" placeholder="Digite o valor de b" required>
         <br><br>
-        <label for="segmento">Selecione um segmento:</label>
-        <br>
-        <select name="segmento" id="segmento" required>
-            <option value="Eletrodomésticos">Eletrodomésticos</option>
-            <option value="Beleza">Beleza</option>
-        </select>
+        <input type="number" name="c" id="c" placeholder="Digite o valor de c " required>
         <br><br>
-        <label for="valor">Selecione o valor do produto:</label>
-        <br>
-        <input type="number" name="valor" id="valor" placeholder="escolha o valor" required>
-        <br><br>
-        <label for="data-venda">Selecione a data da venda:</label>
-        <br><br>
-        <input type="date" name="data-venda" id="data-venda" required>
-        <br><br>
-        <button type="button" onclick= "adicionarLinha()">Cadastrar</button>
+        <button type="button" onclick="adicionarBaskha()">Adicionar</button>
     </form>
     <br><br>
-    <table id="tabelaDados">
+    <table id="tabelaValores">
         <thead>
             <tr>
-                <th>Id</th>
-                <th>Produto</th>
-                <th>Marca</th>
-                <th>Segmento</th>
-                <th>Valor</th>
-                <th>Data da venda</th>
+                <th>Nº</th>
+                <th>a</th>
+                <th>b</th>
+                <th>c</th>
+                <th>x</th>
             </tr>
         </thead>
-        <tbody>
-        </tbody>
+        <tbody></tbody>
     </table>
 </body>
+
 </html>
